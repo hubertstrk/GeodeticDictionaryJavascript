@@ -1,0 +1,19 @@
+extends layout
+
+block head
+  script(src="javascripts/about.js")
+
+block content
+  .row
+    ol(class="breadcrumb")
+      li(class="breadcrumb-item active") #{breadcrumbs}
+  .row
+    h4=title
+  .row
+    p Online dictionary with focus on the field of surveying and geodesie. Currently there are <a href='#'><span class='badge'> #{count} </span></a> translations stored.
+  .row
+    h4 Contact
+    p Hubert Stärk
+    p Aussichtsweg 21
+    p 93138 Lappersdorf
+    a(href="mailto:hubert.staerk@gmail.com") hubert.staerk@gmail.com

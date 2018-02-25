@@ -1,0 +1,27 @@
+extends layout
+
+block head
+  script(src="javascripts/app.js")
+  script(src="javascripts/search.js")
+
+block content
+  .row
+    ol(class="breadcrumb")
+      li(class="breadcrumb-item active") #{breadcrumbs}
+  .row
+    h4 Welcome to #{title}
+  .row
+    #info-wrapper
+      p
+  .row
+    #input-wrapper
+      .input-group
+        span(class="input-group-addon" id="basic-addon1") Search
+        input(id="input" type="text" class="form-control" placeholder="search..." aria-describedby="basic-addon1")
+    #input-animation
+  .row
+    #message-wrapper.hide
+      .alert.alert-danger(role='alert') Some information...
+  .row
+    #result-wrapper
+        table(id='table-result' class='table table-hover table-striped' width='100%')

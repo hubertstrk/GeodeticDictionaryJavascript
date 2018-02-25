@@ -1,0 +1,51 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+#input-wrapper{
+  margin-top:8px;
+}
+#result-wrapper{
+  margin-top:25px;
+}
+#info-wrapper{
+  margin-top:5px;
+}
+#message-wrapper{
+  margin-top:15px;
+}
+.hide{
+  display: none;
+}
+.alert{
+  margin-bottom: 0px;
+}
+#info-wrapper p{
+  font-style: italic;
+}
+#input-animation{
+  height: 5px;
+}
+
+.fadein{
+  animation-name: fadein;
+  animation-duration: 0.7s;
+}
+.fadeout{
+  animation-name: fadeout;
+  animation-duration: 0.5s;
+}
+@keyframes fadein {
+   from {opacity:0;}
+   to {opacity:1;}
+}
+@keyframes fadeout {
+   0%   {top: 0px; background: rgb(0, 204, 102); width: 0%;}
+  100% {top: 200px; background: rgb(204, 255, 229); width: 100%;}
+}
+.highlighted{
+  color:red;
+}
